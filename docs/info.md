@@ -8,13 +8,13 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
+este proyecto se basa en hacer crear la comunicacion i2c por medio de la fpga basys3 y el sensor de temperatura lm75 , y para demostrar que si existe comunicaion se utilizaron las leds 1 y 3 de la placa.
 
-Explain how your project works
 
 ## How to test
 
-Explain how to use your project
+se conecta el sesor i2c con la placa basys3 , la cual al estar en reset encendera la led 3 y cuando se tenga comunicacion entre nuestra placa y el sensor entonces se encendera un segundo led.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+basys3 , sensor de temperatura lm75 
