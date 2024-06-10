@@ -31,7 +31,7 @@ pinout:
   ui[3]: "dvsr"
   ui[4]: "cmd"
   ui[5]: "wr_i2c"
-  ui[6]: ""
+  ui[6]: "sda"
   ui[7]: ""
 
   # Outputs
@@ -45,7 +45,7 @@ pinout:
   uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: "sda"
+  uio[0]: ""
   uio[1]: ""
   uio[2]: ""
   uio[3]: ""
