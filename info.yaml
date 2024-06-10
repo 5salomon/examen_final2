@@ -11,36 +11,41 @@ project:
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
+  top_module:  "tt_um_salomon9920_top"
   
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
-    - "project.v"
+    - "tt_um_salomon9920_top.sv"
+    - "top_module.sv"
+    - "chu_i2c_core.sv"
+    - "i2c_master.sv"
+    - "uart_tx.sv" 
+    
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
+  ui[0]: "clk"
+  ui[1]: "reset"
+  ui[2]: "din"
+  ui[3]: "dvsr"
+  ui[4]: "cmd"
+  ui[5]: "wr_i2c"
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
+  uo[0]: "scl"
+  uo[1]: "dout"
+  uo[2]: "done_tick"
+  uo[3]: "ack"
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
   uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: ""
+  uio[0]: "sda"
   uio[1]: ""
   uio[2]: ""
   uio[3]: ""
